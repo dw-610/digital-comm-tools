@@ -1,4 +1,4 @@
-# Digital Communication Tools
+# Python Digital Communication Tools
 
 This modules in this repository contain tools for baseband simulation of a digital communication system. The physical-layer functionalities are performed according to the IEEE 802.11 standard [[1](https://ieeexplore.ieee.org/document/9442429), [2](https://ieeexplore.ieee.org/document/9363693)].
 
