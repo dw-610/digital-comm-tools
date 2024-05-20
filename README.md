@@ -20,7 +20,7 @@ Defines a single class `PHY` which performs physical-layer operations according 
 
 ### `channels.py`
 
-Defines three classes for simulating different channel effects. For the fading channels, the symbol period is assumed to be approximately equal to the channel coherence time, so that the fading coefficients are IID and differ from one symbols to the next.
+Defines three classes for simulating different channel effects. For the fading channels, the symbol period is assumed to be approximately equal to the channel coherence time, so that the fading coefficients are IID and differ from one symbol to the next.
 
 - `AWGN`: simulates a basic additive white Gaussian noise channel with no fading effects.
 - `Rayleigh`: simulates a channel with Rayleigh fading effects and AWGN.
@@ -28,7 +28,7 @@ Defines three classes for simulating different channel effects. For the fading c
 
 ### `ieee754.py`
 
-Defines a pair of functions `ieee754_b2f` and `ieee754_f2b` for strings of 32 bits to the corresponding floating-point value defined by the IEEE 754 standard, and vice-versa.
+Defines a pair of functions `ieee754_b2f` and `ieee754_f2b` for converting strings of 32 bits to their corresponding floating-point value defined by the IEEE 754 standard, and vice-versa.
 
 ### `quantizer.py`
 
