@@ -55,7 +55,7 @@ class Quantizer():
 
         q_value = (value - self.q_range[0]) / self.q_step
         q_value = round(q_value)
-        bits = d2b(q_value, self.n_bits)
+        bits = _d2b(q_value, self.n_bits)
         return bits
 
     def dequantize(self, bits: np.ndarray):
@@ -80,7 +80,7 @@ class Quantizer():
 
 # ------------------------------------------------------------------------------
 
-def d2b(decimal, nbits) -> np.ndarray:
+def _d2b(decimal, nbits) -> np.ndarray:
     """
     This function takes a decimal number and converts it to a specified number
     of bits in the form of a numpy array.
@@ -107,7 +107,7 @@ def d2b(decimal, nbits) -> np.ndarray:
 
 # ------------------------------------------------------------------------------
 
-def b2d(bits) -> int:
+def _b2d(bits) -> int:
     """
     This function takes a numpy array of bits and converts it to a decimal
     number. Assumes that the bits represent an unsigned integer.
